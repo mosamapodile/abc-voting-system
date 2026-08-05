@@ -8,10 +8,7 @@ contract DeployVoting is Script {
     function run() external {
         vm.startBroadcast();
 
-        new VotingSystem(
-            "2026 Student Election",
-            60
-        );
+        new VotingSystem("2026 Student Election", 60);
 
         vm.stopBroadcast();
     }
