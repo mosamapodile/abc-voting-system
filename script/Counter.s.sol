@@ -2,17 +2,17 @@
 pragma solidity ^0.8.13;
 
 import {Script} from "forge-std/Script.sol";
-import {Counter} from "../src/Counter.sol";
+import {VotingSystem} from "../src/VotingSystem.sol";
 
-contract CounterScript is Script {
-    Counter public counter;
-
-    function setUp() public {}
+contract DeployVoting is Script {
 
     function run() public {
         vm.startBroadcast();
 
-        counter = new Counter();
+        new VotingSystem(
+            "2026 Student Election",
+            60
+        );
 
         vm.stopBroadcast();
     }
