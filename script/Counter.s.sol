@@ -1,12 +1,11 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
 import {Script} from "forge-std/Script.sol";
-import {VotingSystem} from "../src/VotingSystem.sol";
+import {VotingSystem} from "../contracts/Voting.sol";
 
 contract DeployVoting is Script {
-
-    function run() public {
+    function run() external {
         vm.startBroadcast();
 
         new VotingSystem(
