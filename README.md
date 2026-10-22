@@ -1,3 +1,6 @@
+# WeThinkCode verification code :
+WTC-SHT7AV4F
+
 # 🗳️ Decentralized Voting System (ABC Prep Track)
 
 A secure, tamper-proof decentralized voting application built for the **Africa's Blockchain Club (ABC)** technical entry requirements. This repository demonstrates an iterative development workflow, transitioning a basic implementation into a secure smart contract running on a local EVM development environment.
